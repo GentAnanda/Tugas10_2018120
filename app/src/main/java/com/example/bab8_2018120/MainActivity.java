@@ -78,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent a = new Intent(MainActivity.this, MainActivity2.class);
                     startActivity(a);
                 }
+                else if (id == R.id.nav_login) {
+                    Intent a = new Intent(MainActivity.this, Login.class);
+                    startActivity(a);
+                }
                 return true;
             }
         });
@@ -168,4 +172,5 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(channel);
     }
+
 }

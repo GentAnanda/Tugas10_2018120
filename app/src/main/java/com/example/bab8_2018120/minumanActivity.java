@@ -68,6 +68,10 @@ public class minumanActivity extends AppCompatActivity {
                     Intent a = new Intent(minumanActivity.this, MainActivity2.class);
                     startActivity(a);
                 }
+                else if (id == R.id.nav_login){
+                    Intent a = new Intent(minumanActivity.this, Login.class);
+                    startActivity(a);
+                }
                 return true;
             }
         });

@@ -42,6 +42,9 @@ public class Profile extends AppCompatActivity {
                 } else if (id == R.id.nav_profile) {
                     Intent a = new Intent(Profile.this, Profile.class);
                     startActivity(a);
+                } else if (id == R.id.nav_login) {
+                    Intent a = new Intent(Profile.this, Login.class);
+                    startActivity(a);
                 }
                 return true;
             }
